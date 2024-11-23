@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramaticraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <!-- Menu Inicial -->
+    <div id="menu-container" class="container">
+        <h1 class="logo"><img src="logo.png" alt="Gramaticraft"></h1>
+        <div class="menu">
+            <button id="play-button" class="ore-button">Jogar</button>
+            <button id="credits-button" class="ore-button">Créditos</button>
+        </div>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz-container" class="container" style="display: none;">
+        <h1 class="logo"><img src="logo.png" alt="Gramaticraft"></h1>
+        <div id="question-block">
+            <p id="question">Carregando pergunta...</p>
+            <button class="red-button" id="restart" onclick="restartQuiz()"> Restart </button>
+        </div>
+        <div id="answers">
+            <button class="answer">Opção 1</button>
+            <button class="answer">Opção 2</button>
+            <button class="answer">Opção 3</button>
+            <button class="answer">Opção 4</button>
+        </div>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+    <div class="result-screen" id="resultScreen">
+        <div class="result-box" id="resultBox">
+            <h2 id="resultMessage"></h2>
+            <button class="ore-button" onclick="nextQuestion()">Próxima Pergunta</button>
+        </div>
+    </div>
+    <div class="fire">
+
+    </div>
+    <!-- Créditos -->
+    <div id="credits-container" class="container" style="display: none;">
+        <h1 class="title">Créditos</h1>
+        <div id="question-block">
+        <p>Guilherme - Programação, Design, Sons, Imagens</p>
+        <p>Lyedson - Ideias e suporte</p>
+        <p>Vitor - Não fez nada</p>
+        <p>Wiki Minecraft - Assets de som e imagem</p>
+        </div>
+        <button id="back-to-menu" class="ore-button">Voltar ao Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
